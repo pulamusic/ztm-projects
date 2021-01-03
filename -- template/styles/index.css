@@ -5,8 +5,8 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  background: border-box url(../assets/images/argyle.png) rgba(188, 181, 188, 0.6) repeat;
-	background-size: cover;
+  background: border-box url(../assets/images/argyle.png) rgba(188, 181, 188, 0.6) repeat fixed;
+  background-size: auto;
 }
 
 body {
@@ -14,63 +14,13 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: rgba(45, 45, 45, 1);
-  background-color: rgba(234, 234, 234, 0.6);
+  background-color: rgba(206, 197, 214, 0.8);
+  opacity: 1;
 }
-
-/*
-body::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgb(188, 181, 188);
-  background-image: url(../assets/images/argyle.png);
-  background-position: top left;
-  background-repeat: repeat;
-  opacity: 0.4;
-  z-index: -1;
-}
-*/
-
-.bg-img img {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-  
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-  
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px){
-  img.bg {
-    left: 50%;
-    margin-left: -512px; }
-}
-
-/*
-#page-wrap {
-  position: relative;
-  width: 400px;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  -moz-box-shadow: 0 0 20px black;
-  -webkit-box-shadow: 0 0 20px black;
-  box-shadow: 0 0 20px black;
-}
-*/
 
 .container {
   margin: 0 2em;
-  padding: 0.6em;
+  padding: 1.6em;
   display: flex;
   flex-direction: column;
 }
@@ -97,6 +47,8 @@ header {
 }
 
 header h1 {
+  display: inline-flex;
+  justify-content: space-evenly;
   font-size: 2.2em;
   font-weight: 400;
   letter-spacing: 1.2em;
@@ -104,32 +56,60 @@ header h1 {
 }
 
 header h2 {
-  font-size: 1.6em;
+  display: inline-flex;
+  font-size: 1.8em;
   font-weight: 300;
   font-style: italic;
-  padding: 0 0 0.4em 0;
+  padding: 1.4em;
+  margin: auto 2em;
+  border: 0.2em solid rgba(45, 45, 45, 0.2);
+  border-radius: 0.4em;
+}
+
+.util-wrapper {
+  display: inline-flex;
+  margin: 0;
+  /* padding: 2em; */
+  justify-content: center;
+  align-items: center;
+}
+
+#header-icon {
+  display: inline-flex;
+  float: right;
+  padding: 0;
+  margin: auto 2em;
+}
+
+#header-icon i {
+  font-size: 8em;
+  color:rgba(45, 45, 45, 1);
+  border: 0.2em solid rgba(137, 119, 95, 0.4);
+  border-radius: 0.6em;
+  padding: 0.2em;
+  background-color: rgba(137, 119, 95, 0.8);
 }
 
 .header-txt-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border-left: 0.25em solid rgba(45, 45, 45, 0.1);
   padding: 1em 2em;
+  margin: 0 0 0 2em;
 }
 
 .header-img {
-  margin: 0 2em 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   padding: 0;
 }
 
 .header-img-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  border: 0.2em solid rgba(45, 45, 45, 0.1);
-  border-radius: 0.6em;
-  box-shadow: 0.2em 0.2em 4em rgba(45, 45, 45, 0.2);
+  margin: 0 2em 0 0;
 }
 
 .header-img-wrapper img {
@@ -137,6 +117,14 @@ header h2 {
   padding: 0;
   width: 10em;
   height: auto;
+  border: 0.06em solid rgba(45, 45, 45, 0.3);
+  border-radius: 0.6em;
+  box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2);
+  transition: all 1s ease-in-out;
+}
+
+.header-img-wrapper img:hover {
+  transform: scale(1.1);
 }
 
 /* ======== main ======== */
@@ -183,4 +171,17 @@ footer {
   margin: 2em 0;
   padding: 2em 0 0 0;
   border-top: 0.25em solid rgba(45, 45, 45, 0.1);
+}
+
+footer p {
+  font-size: 1.4em;
+}
+
+/* ======== media queries ======== */
+
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1220px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    
 }
