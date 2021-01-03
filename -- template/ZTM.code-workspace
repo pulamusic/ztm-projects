@@ -1,10 +1,18 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": ".."
 		},
 		{
-			"path": ".."
+			"path": "../../../../../../Downloads/FullPageBackgroundImage"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FullPageBackgroundImage"
+	},
+	"extensions": {
+		"recommendations": [
+			"ritwickdey.live-sass"
+		]
+	}
 }
