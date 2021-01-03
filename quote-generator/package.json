@@ -1,0 +1,11 @@
+{
+  "name": "ztm-quote-generator",
+  "version": "0.1.0",
+  "description": "an API project for a ZTM tutorial",
+  "main": "js/index.js",
+  "scripts": {
+    "sass": "sass --watch styles/scss/index.scss:styles/index.css"
+  },
+  "author": "Jim Carroll",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+main {
+  display: block;
+  padding: 1em 2em;
+  .main-img-wrapper {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.8em;
+    border: $border-fat;
+    border-radius: 0.6em;
+    box-shadow: $box-shadow;
+    background-color: $grey-lt-200;
+    img {
+      width: 8em;
+      height: auto;
+    }
+  }
+  #main-img-wrapper-1 {
+    float: right;
+    justify-content: right;
+  }
+  #main-img-wrapper-2 {
+    float: left;
+    justify-content: left;
+  }
+}

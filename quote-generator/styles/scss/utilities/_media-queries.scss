@@ -1,0 +1,12 @@
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1220px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .header-img img {
+      display: none;
+    }
+    .header-txt-wrapper {
+      width: 100%;
+      @include flex-column;
+    }
+}

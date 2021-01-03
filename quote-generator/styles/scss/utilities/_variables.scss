@@ -1,0 +1,192 @@
+//
+// ======== Typography ========
+//
+
+$body-font-family: 'Raleway', sans-serif !default;
+$mono-font-family: 'Source Code Pro', monospace !default;
+$root-font-size: 16px !default;
+$body-line-height: 1.4em !default;
+$content-line-height: 1.6em !default;
+$extra-line-height: 1.8em !default;
+$body-heading-line-height: 1.25em !default;
+
+//
+// ======== Font size ========
+// `-sm` suffix is the size at the small (and above) media query
+//
+$font-size-1: 0.5625em !default;
+$font-size-1-sm: 0.625em !default;
+$font-size-2: 0.6875em !default; //h4
+$font-size-3: 0.75em !default; //h5
+$font-size-4: 0.875em !default;
+$font-size-5: 1em !default; //h3
+$font-size-6: 1.125em !default; //h2
+$font-size-7: 1.5em !default;
+$font-size-8: 2em !default; //h1
+$font-size-9: 2.25em !default;
+$font-size-10: 2.625em !default;
+$font-size-10-sm: 3em !default;
+
+//
+// ======== Colors ========
+//
+$white-100: rgb(255, 255, 255) !default;
+$off-white-000: rgb(237, 237, 237) !default;
+$off-white-100: rgb(247, 247, 247) !default;
+
+$black-dk-100: rgb(32, 29, 29) !default;
+$black-dk-200: rgb(21, 19, 19) !default;
+$black-dk-300: rgb(11, 10, 10) !default;
+
+$black-lt-100: rgb(76, 67, 67) !default;
+$black-lt-200: rgb(65, 58, 58) !default;
+$black-lt-300: rgb(54, 48, 48) !default;
+
+$grey-dk-000: rgb(149, 147, 150) !default;
+$grey-dk-100: rgb(92, 89, 98) !default;
+$grey-dk-200: rgb(68, 67, 77) !default;
+$grey-dk-250: rgb(48, 45, 54) !default;
+$grey-dk-300: rgb(39, 38, 43) !default;
+
+$grey-md-200: rgba(188, 181, 188, 0.6);
+
+$grey-lt-000: rgb(245, 246, 250) !default;
+$grey-lt-100: rgb(238, 235, 238) !default;
+$grey-lt-200: rgb(236, 235, 237) !default;
+$grey-lt-300: rgb(230, 225, 232) !default;
+
+$purple-000: rgb(114, 83, 237) !default;
+$purple-100: rgb(94, 65, 208) !default;
+$purple-200: rgb(78, 38, 175) !default;
+$purple-300: rgb(56, 24, 133) !default;
+
+$blue-000: rgb(44, 132, 250) !default;
+$blue-100: rgb(40, 105, 230) !default;
+$blue-200: rgb(38, 76, 175) !default;
+$blue-300: rgb(24, 51, 133) !default;
+
+$green-000: rgb(65, 214, 147) !default;
+$green-100: rgb(17, 181, 132) !default;
+$green-200: rgb(0, 156, 123) !default;
+$green-300: rgb(2, 110, 87) !default;
+
+$yellow-000: rgb(255, 235, 130) !default;
+$yellow-100: rgb(250, 223, 80) !default;
+$yellow-200: rgb(247, 209, 46) !default;
+$yellow-300: rgb(231, 175, 6) !default;
+
+$red-000: rgb(247, 126, 126) !default;
+$red-100: rgb(249, 110, 101) !default;
+$red-200: rgb(233, 76, 76) !default;
+$red-300: rgb(221, 46, 46) !default;
+
+$brown-000: rgba(137, 119, 95, 0.6);
+$brown-100: rgba(137, 119, 95, 0.8);
+$brown-200: rgba(137, 119, 95, 1);
+
+//
+// ======== Background colors & patterns ========
+//
+
+$bg-pattern-1-url: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%239C92AC' fill-opacity='0.87'%3E%3Cpath fill-rule='evenodd' d='M41 37.59V25h-2v12.59l-8.9-8.9-1.41 1.41 8.9 8.9H25v2h12.59l-8.9 8.9 1.41 1.41 8.9-8.9V55h2V42.41l8.9 8.9 1.41-1.41-8.9-8.9H55v-2H42.41l8.9-8.9-1.41-1.41-8.9 8.9zM1 1h2v2H1V1zm0 4h2v2H1V5zm0 4h2v2H1V9zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm0 4h2v2H1v-2zm4 0h2v2H5v-2zm4 0h2v2H9v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zm4 0h2v2h-2v-2zM5 1h2v2H5V1zm4 0h2v2H9V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm4 0h2v2h-2V1zm0 4h2v2h-2V5zm0 4h2v2h-2V9zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zm0 4h2v2h-2v-2zM5 5h70v70H5V5zm2 68h66V7H7v66zM9 9h62v62H9V9zm2 60h58V11H11v58zm2-39.6V13h16.4A29.1 29.1 0 0 0 13 29.4zM15 15v6.67A31.17 31.17 0 0 1 21.67 15H15zm-2 52V50.6A29.1 29.1 0 0 0 29.4 67H13zm2-8.67V65h6.67A31.17 31.17 0 0 1 15 58.33zM67 67H50.6A29.1 29.1 0 0 0 67 50.6V67zm-8.67-2H65v-6.67A31.17 31.17 0 0 1 58.33 65zM67 13v16.4A29.1 29.1 0 0 0 50.6 13H67zm-2 8.67V15h-6.67A31.17 31.17 0 0 1 65 21.67zM39 13h2v2h-2v-2zm7.02.66l1.93.52-.51 1.93-1.94-.52.52-1.93zm6.61 2.46l1.74 1-1 1.73-1.74-1 1-1.73zm5.75 4.08l1.42 1.42-1.42 1.4-1.4-1.4 1.4-1.42zm4.5 5.43l1 1.74-1.73 1-1-1.74 1.73-1zm2.94 6.42l.52 1.93-1.93.52-.52-1.94 1.93-.51zM67 39v2h-2v-2h2zm-.66 7.02l-.52 1.93-1.93-.51.52-1.94 1.93.52zm-2.46 6.61l-1 1.74-1.73-1 1-1.74 1.73 1zm-4.08 5.75l-1.42 1.42-1.4-1.42 1.4-1.4 1.42 1.4zm-5.43 4.5l-1.74 1-1-1.73 1.74-1 1 1.73zM41 67h-2v-2h2v2zm6.95-1.18l-1.93.52-.52-1.93 1.94-.52.51 1.93zm-13.97.52l-1.93-.52.51-1.93 1.94.52-.52 1.93zm-6.61-2.46l-1.74-1 1-1.73 1.74 1-1 1.73zm-5.75-4.08l-1.42-1.42 1.42-1.4 1.4 1.4-1.4 1.42zm-4.5-5.43l-1-1.74 1.73-1 1 1.74-1.73 1zm-2.94-6.42l-.52-1.93 1.93-.52.52 1.94-1.93.51zM13 41v-2h2v2h-2zm.66-7.02l.52-1.93 1.93.51-.52 1.94-1.93-.52zm2.46-6.61l1-1.74 1.73 1-1 1.74-1.73-1zm4.08-5.75l1.42-1.42 1.4 1.42-1.4 1.4-1.42-1.4zm5.43-4.5l1.74-1 1 1.73-1.74 1-1-1.73zm6.42-2.94l1.93-.52.52 1.93-1.94.52-.51-1.93zM40 63a23 23 0 1 1 0-46 23 23 0 0 1 0 46zm0-2a21 21 0 1 0 0-42 21 21 0 0 0 0 42zm0-2a19 19 0 1 1 0-38 19 19 0 0 1 0 38zm0-2a17 17 0 1 0 0-34 17 17 0 0 0 0 34z'/%3E%3C/g%3E%3C/svg%3E";
+$bg-pattern-2-url: '../../../assets/images/argyle.png';
+
+$body-background-color: $off-white-000 !default;
+$html-background-color: $grey-md-200;
+$html-background: border-box url($bg-pattern-2-url) $html-background-color repeat fixed !default;
+$sidebar-color: $grey-lt-000 !default;
+$search-background-color: $grey-lt-200 !default;
+$table-background-color: $purple-000 !default;
+$code-background-color: $grey-lt-000 !default;
+$feedback-color: darken($sidebar-color, 3%) !default;
+$header-icon-bg-color: $brown-100 !default;
+
+//
+// ======== Text & component colors ========
+//
+$body-text-color: $black-dk-200 !default;
+$body-heading-color: $black-dk-300 !default;
+$search-result-preview-color: $grey-dk-000 !default;
+$nav-child-link-color: $grey-dk-100 !default;
+
+$link-color: $brown-000 !default;
+$link-color-hover: $brown-200 !default;
+
+$btn-primary-color: $purple-100 !default;
+$base-button-color: $off-white-100 !default;
+
+//
+// ======== Spacing ========
+//
+$spacing-unit: 1rem; // 1rem == 16px
+
+$spacers: (
+  sp-0: 0,
+  sp-1: $spacing-unit * 0.25,
+  sp-2: $spacing-unit * 0.5,
+  sp-3: $spacing-unit * 0.75,
+  sp-4: $spacing-unit,
+  sp-5: $spacing-unit * 1.5,
+  sp-6: $spacing-unit * 2,
+  sp-7: $spacing-unit * 2.5,
+  sp-8: $spacing-unit * 3,
+  sp-9: $spacing-unit * 3.5,
+  sp-10: $spacing-unit * 4,
+) !default;
+
+$sp-1: map-get($spacers, sp-1) !default; // 0.25 rem == 4px
+$sp-2: map-get($spacers, sp-2) !default; // 0.5  rem == 8px
+$sp-3: map-get($spacers, sp-3) !default; // 0.75 rem == 12px
+$sp-4: map-get($spacers, sp-4) !default; // 1    rem == 16px
+$sp-5: map-get($spacers, sp-5) !default; // 1.5  rem == 24px
+$sp-6: map-get($spacers, sp-6) !default; // 2    rem == 32px
+$sp-7: map-get($spacers, sp-7) !default; // 2.5  rem == 40px
+$sp-8: map-get($spacers, sp-8) !default; // 3    rem == 48px
+$sp-9: map-get($spacers, sp-9) !default; // 3.5  rem == 56px
+$sp-10: map-get($spacers, sp-10) !default; // 4  rem == 64px
+
+//
+// ======== Borders & things ========
+//
+$border-color: rgba(45, 45, 45, 0.2) !default;
+$border-fat: 0.25em solid $border-color;
+$border-med: 0.1em solid $border-color !default;
+$border-thin: 0.06em solid $border-color;
+$border-radius: 0.6em !default;
+
+$box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2) !default;
+
+// 
+// ======== transitions & transforms ========
+// 
+$transition-med: all 1s ease-in-out;
+$transform-scale-sm: scale(1.1);
+
+//
+// ======== Grid system ========
+//
+$gutter-spacing: $sp-6 !default;
+$gutter-spacing-sm: $sp-4 !default;
+
+$nav-width: 16.5em !default;
+$nav-width-md: 15.5em !default;
+$nav-list-item-height: $sp-6 !default;
+$nav-list-item-height-sm: $sp-8 !default;
+$nav-list-expander-right: true;
+
+$content-width: 3.125em !default;
+$header-height: 3.75em !default;
+$search-results-width: $content-width - $nav-width !default;
+$transition-duration: 0.4s;
+
+//
+// ======== Media queries in pixels ========
+//
+
+$media-queries: (
+  xs: 320px,
+  sm: 500px,
+  md: $content-width,
+  lg: $content-width + $nav-width,
+  xl: 1400px,
+) !default;
