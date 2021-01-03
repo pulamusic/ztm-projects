@@ -1,0 +1,11 @@
+{
+  "name": "ztm-projects-template",
+  "version": "0.1.0",
+  "description": "a setup template for a ZTM tutorial on JavaScript web projects",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles/scss/index.scss styles/index.css"
+  },
+  "author": "Jim Carroll",
+  "license": "MIT"
+}

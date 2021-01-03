@@ -1,0 +1,38 @@
+main {
+  display: block;
+  padding: 1em 2em;
+  .main-img-wrapper {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.8em;
+    border: 0.2em solid rgba(45, 45, 45, 0.1);
+    border-radius: 0.6em;
+    box-shadow: 0.2em 0.2em 4em rgba(45, 45, 45, 0.4);
+    background-color: rgba(234, 234, 234, 0.4);
+    img {
+      width: 8em;
+      height: auto;
+    }
+  }
+  #main-img-wrapper-1 {
+    float: right;
+    justify-content: right;
+  }
+  #main-img-wrapper-2 {
+    float: left;
+    justify-content: left;
+  }
+}
+
+
+
+
+
+#main-img-1 
+
+
+
+#main-img-2 img {
+  width: 8em;
+  height: auto;
+}

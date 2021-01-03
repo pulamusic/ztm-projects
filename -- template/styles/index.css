@@ -7,6 +7,7 @@ html {
   scroll-behavior: smooth;
   background: border-box url(../assets/images/argyle.png) rgba(188, 181, 188, 0.6) repeat fixed;
   background-size: auto;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,6 +38,7 @@ a:hover {
 
 hr {
   color: rgb(45, 45, 45);
+  width: 60%;
 }
 
 /* ======== main ======== */
@@ -178,10 +180,15 @@ footer p {
 }
 
 /* ======== media queries ======== */
-
 @media screen 
   and (min-device-width: 800px) 
   and (max-device-width: 1220px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    
+    .header-img img {
+      display: none;
+    }
+    .header-txt-wrapper {
+      width: 100%;
+      flex-direction: column;
+    }
 }
