@@ -14,9 +14,9 @@ header {
         border: $border-thin;
         border-radius: $border-radius;
         box-shadow: $box-shadow;
-        transition: all 1s ease-in-out;
+        transition: $transition-med;
         &:hover {
-          transform: scale(1.1);
+          transform: $transform-scale-sm;
         }
       }
     }
@@ -32,7 +32,7 @@ header {
       font-size: $font-size-9;
       font-weight: 400;
       letter-spacing: $sp-4;
-      line-height: 1.8em;
+      line-height: $extra-line-height;
     }
     h2 {
       display: inline-flex;

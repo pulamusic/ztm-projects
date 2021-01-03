@@ -5,10 +5,10 @@ main {
     display: inline-block;
     margin: 1em;
     padding: 0.8em;
-    border: 0.2em solid rgba(45, 45, 45, 0.1);
+    border: $border-fat;
     border-radius: 0.6em;
-    box-shadow: 0.2em 0.2em 4em rgba(45, 45, 45, 0.4);
-    background-color: rgba(234, 234, 234, 0.4);
+    box-shadow: $box-shadow;
+    background-color: $grey-lt-200;
     img {
       width: 8em;
       height: auto;
@@ -22,17 +22,4 @@ main {
     float: left;
     justify-content: left;
   }
-}
-
-
-
-
-
-#main-img-1 
-
-
-
-#main-img-2 img {
-  width: 8em;
-  height: auto;
 }

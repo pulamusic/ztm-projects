@@ -7,25 +7,28 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  background: border-box url(../assets/images/argyle.png) rgba(188, 181, 188, 0.6) repeat fixed;
+  background: $html-background;
   background-size: auto;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-family: $body-font-family;
+  font-size: $root-font-size;
   font-weight: 400;
-  color: rgba(45, 45, 45, 1);
-  background-color: rgba(206, 197, 214, 0.8);
+  color: $black-dk-200;
+  background-color: $body-background-color;
   opacity: 1;
+}
+
+code {
+  font-family: $mono-font-family;
 }
 
 .container {
   margin: 0 2em;
   padding: 1.6em;
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 
 .util-wrapper {
@@ -36,14 +39,14 @@ body {
 a {
   text-decoration: none;
   outline: none;
-  color: rgba(137, 119, 95, 0.6);
+  color: $link-color;
 }
 
 a:hover {
-  color: rgba(137, 119, 95, 1)
+  color: $link-color-hover;
 }
 
 hr {
-  color: rgb(45, 45, 45);
+  color: $grey-dk-250;
   width: 60%;
 }
