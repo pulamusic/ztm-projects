@@ -7,8 +7,6 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  background: $html-background;
-  background-size: auto;
   box-sizing: border-box;
 }
 
@@ -17,8 +15,9 @@ body {
   font-size: $root-font-size;
   font-weight: 400;
   color: $black-dk-200;
-  background-color: $body-background-color;
+  background: $body-background;
   opacity: 1;
+  height: 100vh;
 }
 
 code {
@@ -47,6 +46,6 @@ a:hover {
 }
 
 hr {
-  color: $grey-dk-250;
+  color: $black-lt-300;
   width: 60%;
 }

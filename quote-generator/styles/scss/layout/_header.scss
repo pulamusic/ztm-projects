@@ -1,63 +1,12 @@
 header {
-  @include flex-row;
-  border-bottom: $border-fat;
-  .header-img {
-    @include inline-flex-center;
-    margin: auto;
-    padding: 0;
-    .header-img-wrapper {
-      margin: 0 2em 0 0;
-      img {
-        @include reset-0;
-        width: 10em;
-        height: auto;
-        border: $border-thin;
-        border-radius: $border-radius;
-        box-shadow: $box-shadow;
-        transition: $transition-med;
-        &:hover {
-          transform: $transform-scale-sm;
-        }
-      }
-    }
-  }
-  .header-txt-wrapper {
-    @include flex-row-center;
-    border-left: $border-med;
-    padding: 1em 2em;
-    margin: 0 0 0 2em;
-    h1 {
-      display: inline-flex;
-      justify-content: space-evenly;
-      font-size: $font-size-9;
-      font-weight: 400;
-      letter-spacing: $sp-4;
-      line-height: $extra-line-height;
-    }
-    h2 {
-      display: inline-flex;
-      font-size: $font-size-8;
-      font-weight: 300;
-      font-style: italic;
-      padding: 1.4em;
-      margin: auto 2em;
-      border: $border-med;
-      border-radius: $border-radius;
-    }
-    #header-icon {
-      display: inline-flex;
-      float: right;
-      padding: 0;
-      margin: auto 2em;
-      i {
-        font-size: 8em;
-        color: $black-lt-300;
-        border: $border-med;
-        border-radius: $border-radius;
-        padding: 0.2em;
-        background-color: $header-icon-bg-color;
-      }
-    }
+  @include flex-column-center;
+  // border-bottom: $border-fat;
+  h1 {
+    font-size: $font-size-9;
+    font-weight: 300;
+    letter-spacing: 1.2em;
+    padding: 0.5em;
+    margin: 2em auto;
   }
 }
 
