@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "../quote-generator"
+		},
+		{
+			"path": "../../../../../Repositories/cors-anywhere"
 		}
 	],
 	"settings": {

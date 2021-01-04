@@ -30,9 +30,18 @@ code {
   @include flex-column;
 }
 
+.container-alt {
+  @include flex-column;
+  @include reset-0;
+}
+
 .util-wrapper {
   @include inline-flex-center;
   @include reset-0;
+}
+
+.clearfix {
+  overflow: auto;
 }
 
 a {

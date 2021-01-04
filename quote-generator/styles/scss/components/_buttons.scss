@@ -1,0 +1,37 @@
+.button-container {
+  @include flex-row-space-between;
+  margin-top: 1em;
+}
+
+button {
+  cursor: pointer;
+  font-size: $font-size-6;
+  height: 2.6em;
+  border: none;
+  outline: none;
+  border-radius: $border-radius;
+  color: $off-white-000;
+  background-color: $grey-dk-100;
+  padding: 0.8em 1.2em;
+  text-align: center;
+  box-shadow: $box-shadow-btn-pre;
+  &:hover {
+    filter: brightness(110%);
+  }
+  &:active {
+    transform: $transform-translate;
+    box-shadow: $box-shadow-btn-post;
+  }
+}
+
+.twitter-button {
+  .fa-twitter {
+    font-size: $font-size-6;
+  }
+  &:hover {
+    color: $blue-twitter;
+  }
+}
+
+
+

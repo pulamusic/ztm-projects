@@ -1,5 +1,29 @@
 main {
   @include flex-column-center;
   padding: 1em 2em;
-  
+  .quote-container {
+    width: auto;
+    max-width: 56.25em;
+    padding: 1.1em 1.9em;
+    text-align: center;
+    background-color: $quote-bg-color;
+    border-radius: $border-radius-xl;
+    box-shadow: $box-shadow;
+    .quote-text {
+      font-size: $font-size-8;
+      font-weight: 400;
+      .fa-quote-left {
+        font-size: $font-size-9;
+      }
+    }
+    .long-quote {
+      font-size: $font-size-8;
+    }
+    .quote-author {
+      margin-top: 1em;
+      font-size: $font-size-7;
+      font-weight: 300;
+      font-style: italic;
+    }
+  }
 }

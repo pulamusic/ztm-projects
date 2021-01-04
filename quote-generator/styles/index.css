@@ -260,12 +260,23 @@ code {
   flex-direction: column;
 }
 
+.container-alt {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
 .util-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
+}
+
+.clearfix {
+  overflow: auto;
 }
 
 a {
@@ -294,7 +305,7 @@ header h1 {
   font-weight: 300;
   letter-spacing: 1.2em;
   padding: 0.5em;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 
 main {
@@ -303,6 +314,31 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1em 2em;
+}
+main .quote-container {
+  width: auto;
+  max-width: 56.25em;
+  padding: 1.1em 1.9em;
+  text-align: center;
+  background-color: rgba(237, 237, 237, 0.6);
+  border-radius: 1.4em;
+  box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2);
+}
+main .quote-container .quote-text {
+  font-size: 2em;
+  font-weight: 400;
+}
+main .quote-container .quote-text .fa-quote-left {
+  font-size: 2.25em;
+}
+main .quote-container .long-quote {
+  font-size: 2em;
+}
+main .quote-container .quote-author {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  font-style: italic;
 }
 
 footer {
@@ -315,7 +351,42 @@ footer {
   padding: 2em 0 0 0;
 }
 footer p {
-  font-size: 1.5em;
+  font-size: 1.125em;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.125em;
+  height: 2.6em;
+  border: none;
+  outline: none;
+  border-radius: 0.6em;
+  color: #ededed;
+  background-color: #5c5962;
+  padding: 0.8em 1.2em;
+  text-align: center;
+  box-shadow: 0.15em 0.15em rgba(92, 89, 98, 0.4);
+}
+button:hover {
+  filter: brightness(110%);
+}
+button:active {
+  transform: translate(0, 0.2em);
+  box-shadow: 0.15em 0.15em rgba(247, 247, 247, 0.6);
+}
+
+.twitter-button .fa-twitter {
+  font-size: 1.125em;
+}
+.twitter-button:hover {
+  color: #38a1f3;
 }
 
 /*# sourceMappingURL=index.css.map */

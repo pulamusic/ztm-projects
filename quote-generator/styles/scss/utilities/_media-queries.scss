@@ -1,12 +1,13 @@
 @media screen 
-  and (min-device-width: 800px) 
   and (max-device-width: 1220px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .header-img img {
-      display: none;
+    .quote-container {
+      margin: auto 0.8em;
     }
-    .header-txt-wrapper {
-      width: 100%;
-      @include flex-column;
+    .quote-text {
+      font-size: $font-size-7;
+      .fa-quote-left {
+        font-size: $font-size-8;
+      }
     }
 }

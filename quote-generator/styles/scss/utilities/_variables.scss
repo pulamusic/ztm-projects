@@ -26,6 +26,7 @@ $font-size-8: 2em !default; //h1
 $font-size-9: 2.25em !default;
 $font-size-10: 2.625em !default;
 $font-size-10-sm: 3em !default;
+$font-size-11: 4em !default;
 
 //
 // ======== Colors ========
@@ -67,6 +68,8 @@ $blue-100: rgb(40, 105, 230) !default;
 $blue-200: rgb(38, 76, 175) !default;
 $blue-300: rgb(24, 51, 133) !default;
 
+$blue-twitter: rgb(56, 161, 243);
+
 $green-000: rgb(65, 214, 147) !default;
 $green-100: rgb(17, 181, 132) !default;
 $green-200: rgb(0, 156, 123) !default;
@@ -107,6 +110,7 @@ $table-background-color: $purple-000 !default;
 $code-background-color: $grey-lt-000 !default;
 $feedback-color: darken($sidebar-color, 3%) !default;
 $header-icon-bg-color: $brown-100 !default;
+$quote-bg-color: rgba(237, 237, 237, 0.6);
 
 //
 // ======== Text & component colors ========
@@ -160,14 +164,19 @@ $border-fat: 0.25em solid $border-color;
 $border-med: 0.1em solid $border-color !default;
 $border-thin: 0.06em solid $border-color;
 $border-radius: 0.6em !default;
+$border-radius-xl: 1.4em !default;
 
 $box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2) !default;
+$box-shadow-btn-pre: 0.15em 0.15em rgba(92, 89, 98, 0.4);
+$box-shadow-btn-post: 0.15em 0.15em rgba(247, 247, 247, 0.6);
 
 // 
 // ======== transitions & transforms ========
 // 
 $transition-med: all 1s ease-in-out;
+
 $transform-scale-sm: scale(1.1);
+$transform-translate: translate(0, 0.2em);
 
 //
 // ======== Grid system ========
