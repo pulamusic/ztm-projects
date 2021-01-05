@@ -327,18 +327,24 @@ main .quote-container {
 main .quote-container .quote-text {
   font-size: 2em;
   font-weight: 400;
+  line-height: 1.6em;
 }
 main .quote-container .quote-text .fa-quote-left {
-  font-size: 2.25em;
-}
-main .quote-container .long-quote {
   font-size: 2em;
 }
+main .quote-container .long-quote {
+  font-size: 1.125em;
+}
 main .quote-container .quote-author {
-  margin-top: 1em;
+  margin: 1em auto;
+  padding-top: 0.8em;
   font-size: 1.5em;
   font-weight: 300;
   font-style: italic;
+  border-top: 0.1em solid rgba(45, 45, 45, 0.2);
+}
+main .quote-container .quote-author #pen-icon {
+  padding-right: 0.4em;
 }
 
 footer {
@@ -372,14 +378,14 @@ button {
   background-color: #5c5962;
   padding: 0.8em 1.2em;
   text-align: center;
-  box-shadow: 0.15em 0.15em rgba(92, 89, 98, 0.4);
+  box-shadow: 0.2em 0.2em 0.5em rgba(92, 89, 98, 0.8);
 }
 button:hover {
   filter: brightness(110%);
 }
 button:active {
   transform: translate(0, 0.2em);
-  box-shadow: 0.15em 0.15em rgba(247, 247, 247, 0.6);
+  box-shadow: 0.2em 0.2em 1em #5c5962;
 }
 
 .twitter-button .fa-twitter {
@@ -387,6 +393,34 @@ button:active {
 }
 .twitter-button:hover {
   color: #38a1f3;
+}
+
+.loader {
+  border: 3em solid #f7f7f7;
+  border-radius: 50%;
+  border-top: 3em solid #afa2bf;
+  border-bottom: 3em solid #afa2bf;
+  width: 6em;
+  height: 6em;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

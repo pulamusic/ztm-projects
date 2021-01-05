@@ -8,8 +8,6 @@
     <meta name="theme-color" content="#2d2d2d">
     <meta name="ZTM project template" description="I'm just following along">
     <title>quote generator</title>
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- local stylesheet -->
     <link rel="stylesheet" href="styles/index.css">
     <!-- favicon links -->
@@ -20,9 +18,9 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/8b33ae55be.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/74ff6d679f.js" crossorigin="anonymous"></script>
   </head>
-  
+
   <body>
     <div class="container-alt">
       <header>
@@ -34,11 +32,14 @@
           <!-- quote -->
           <div class="quote-text">
             <i class="fas fa-quote-left"></i>
-            <span id="quote">History is His story. You haven't heard my story</span>
+            <!-- quote text inserted here -->
+            <span id="quote"></span>
           </div>
           <!-- author -->
           <div class="quote-author">
-            <span id="author">Sun Ra</span>
+            <i class="fal fa-pen-fancy" id="pen-icon"></i>
+            <!-- author name inserted here -->
+            <span id="author"></span>
           </div>
           <!-- buttons -->
           <div class="button-container">
@@ -48,13 +49,15 @@
             <button id="new-quote" class="clearfix">go ahead, push me</button>
           </div>
         </div>
+        <!-- spinner to display while loading -->
+        <div class="loader" id="loader"></div>
       </main>
       <footer>
         <hr>
         <p>&copy; <span id="copyYearSpan"></span> <a href="https://github.com/pulamusic">pulamusic</a></p>
       </footer>
     </div>
-    
+
     <!-- local scripts -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/year.js"></script>

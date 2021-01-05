@@ -1,7 +1,7 @@
 const copyYear = () => {
   const currentYear = new Date().getFullYear()
-  const year = (currentYear === 2020)
-  let yearDivTxt = ''
+  const year = (currentYear === 2021)
+  let yearDivTxt
   return year ? yearDivTxt = currentYear : yearDivTxt = `2020-${currentYear}`
 }
 
