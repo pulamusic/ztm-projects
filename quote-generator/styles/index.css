@@ -23,7 +23,8 @@ h1 {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -40,7 +41,8 @@ a {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b {
@@ -99,10 +101,12 @@ button {
   text-transform: none;
   -webkit-appearance: button;
 }
+
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -138,36 +142,42 @@ textarea {
   overflow: auto;
 }
 
-[type=button] {
+[type="button"] {
   -webkit-appearance: button;
 }
-[type=button]::-moz-focus-inner {
+
+[type="button"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type=button]:-moz-focusring {
+
+[type="button"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-[type=reset] {
+[type="reset"] {
   -webkit-appearance: button;
 }
-[type=reset]::-moz-focus-inner {
+
+[type="reset"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type=reset]:-moz-focusring {
+
+[type="reset"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
-[type=submit] {
+[type="submit"] {
   -webkit-appearance: button;
 }
-[type=submit]::-moz-focus-inner {
+
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
-[type=submit]:-moz-focusring {
+
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -176,7 +186,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -188,28 +199,32 @@ progress {
   vertical-align: baseline;
 }
 
-[type=checkbox] {
-  box-sizing: border-box;
+[type="checkbox"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
-[type=radio] {
-  box-sizing: border-box;
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button {
-  height: auto;
-}
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-[type=search]::-webkit-search-decoration {
+
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -236,7 +251,8 @@ html, body {
 
 html {
   scroll-behavior: smooth;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -256,21 +272,37 @@ code {
 .container {
   margin: 0 2em;
   padding: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container-alt {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
 .util-wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -295,11 +327,21 @@ hr {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 header h1 {
   font-size: 2.25em;
   font-weight: 300;
@@ -309,12 +351,22 @@ header h1 {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em 2em;
 }
+
 main .quote-container {
   width: auto;
   max-width: 56.25em;
@@ -322,19 +374,24 @@ main .quote-container {
   text-align: center;
   background-color: rgba(237, 237, 237, 0.6);
   border-radius: 1.4em;
-  box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2);
+  -webkit-box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2);
+          box-shadow: 0.2em 0.2em 2em rgba(45, 45, 45, 0.2);
 }
+
 main .quote-container .quote-text {
   font-size: 2em;
   font-weight: 400;
   line-height: 1.6em;
 }
+
 main .quote-container .quote-text .fa-quote-left {
   font-size: 2em;
 }
+
 main .quote-container .long-quote {
   font-size: 1.125em;
 }
+
 main .quote-container .quote-author {
   margin: 1em auto;
   padding-top: 0.8em;
@@ -343,27 +400,45 @@ main .quote-container .quote-author {
   font-style: italic;
   border-top: 0.1em solid rgba(45, 45, 45, 0.2);
 }
+
 main .quote-container .quote-author #pen-icon {
   padding-right: 0.4em;
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   margin: 2em 0;
   padding: 2em 0 0 0;
 }
+
 footer p {
   font-size: 1.125em;
 }
 
 .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 1em;
 }
 
@@ -378,19 +453,26 @@ button {
   background-color: #5c5962;
   padding: 0.8em 1.2em;
   text-align: center;
-  box-shadow: 0.2em 0.2em 0.5em rgba(92, 89, 98, 0.8);
+  -webkit-box-shadow: 0.2em 0.2em 0.5em rgba(92, 89, 98, 0.8);
+          box-shadow: 0.2em 0.2em 0.5em rgba(92, 89, 98, 0.8);
 }
+
 button:hover {
-  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
+
 button:active {
-  transform: translate(0, 0.2em);
-  box-shadow: 0.2em 0.2em 1em #5c5962;
+  -webkit-transform: translate(0, 0.2em);
+          transform: translate(0, 0.2em);
+  -webkit-box-shadow: 0.2em 0.2em 1em #5c5962;
+          box-shadow: 0.2em 0.2em 1em #5c5962;
 }
 
 .twitter-button .fa-twitter {
   font-size: 1.125em;
 }
+
 .twitter-button:hover {
   color: #38a1f3;
 }
@@ -414,13 +496,14 @@ button:active {
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
-
-/*# sourceMappingURL=index.css.map */

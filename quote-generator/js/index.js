@@ -6,8 +6,6 @@
   This project is from the ZTM tutorial titled JavaScript Web Projects (https://academy.zerotomastery.io/courses/1007166/)
 
   proxyUrl provides a solution to common CORS issues. pure-mountain-34791.herokuapp.com is my own proxy server
-
-  Problem in the catch statement: the way it was originally written, placing getQuote() in the catch statement caused an infinite recursive loop of error messages and api calls. I'm checking out (https://medium.com/dailyjs/functional-js-with-es6-recursive-patterns-b7d0813ef9e3) for a possible solution.
 */
 
 const quoteContainer = document.getElementById('quote-container'),
@@ -28,6 +26,8 @@ removeLoadingSpinner = () => {
     loader.hidden = true
   }
 }
+
+// something isn't working today (01/07/2021)
 
 getQuote = async () => {
   showLoadingSpinner()
@@ -54,15 +54,14 @@ getQuote = async () => {
     quoteTxt.innerText = data.quoteText
     // remove loader and show quote
     removeLoadingSpinner()
+
     //throw new Error('Ya fucked up')
   } catch (error) {
-    for (let i = 0; i <= 10; i++) {
-      console.log(error)
-      //return getQuote()
-    }
     getQuote()
   }
+  getQuote()
 }
+
 
 tweetQuote = () => {
   const quote = quoteTxt.innerText,
