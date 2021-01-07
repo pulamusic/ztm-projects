@@ -8,7 +8,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "FullPageBackgroundImage"
+		"liveServer.settings.multiRootWorkspaceName": "quote-generator"
 	},
 	"extensions": {
 		"recommendations": [
