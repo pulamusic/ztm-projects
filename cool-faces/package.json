@@ -1,0 +1,16 @@
+{
+  "name": "cool-faces",
+  "version": "0.1.0",
+  "description": "messing around with the cool-ascii-faces npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Carroll",
+  "license": "MIT",
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "date-fns": "^2.16.1",
+    "parcel-bundler": "^1.12.4"
+  }
+}

@@ -1,14 +1,21 @@
 {
 	"folders": [
 		{
-			"path": "../../../../../Repositories/quote-generator"
+			"path": ".."
 		},
 		{
-			"path": ".."
+			"path": "../../../../../Repositories/pulamusic-cms"
+		},
+		{
+			"path": "../../../../../Repositories/heroku-node-starter-app"
+		},
+		{
+			"path": "../cool-faces"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "quote-generator"
+		"liveServer.settings.multiRootWorkspaceName": "pulamusic-cms",
+		"git.ignoreLimitWarning": true
 	},
 	"extensions": {
 		"recommendations": [

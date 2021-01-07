@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: rgba(128, 115, 137, 0.8);
+}
+
+a:hover {
+  color: rgba(128, 115, 137, 1);
+}
+
+/*
+hr {
+  width: 60%;
+}
+*/
