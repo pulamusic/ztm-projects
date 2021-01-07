@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "../quote-generator"
+			"path": "../../../../../Repositories/quote-generator"
 		},
 		{
-			"path": "../../../../../Repositories/cors-anywhere"
+			"path": ".."
 		}
 	],
 	"settings": {
